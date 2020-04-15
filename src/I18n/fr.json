@@ -1,0 +1,129 @@
+{
+    "home": {
+        "title": "Message de bienvenue",
+        "introduction": "Ce texte provient de i18next et ecrit en français"
+    },
+    "page2": {
+        "title": "Page 2",
+        "introduction": "Ce texte dans page deux"
+    },
+    "news": {
+        "title": "Actualité",
+        "time": "il y a ",
+        "timeHeure": " heures",
+        "full":"ARTICLE COMPLET",
+        "indicator": "Veuillez attender..."
+    },
+
+    "auth": {
+        "email": "Email",
+        "displayName": "Nom d'utilisateur",
+        "foreignVisit": "Étiez-Vous à étranger ces 30 derniers jours",
+        "password": "Mot de passe",
+        "login": "Connexion",
+        "signup": "Créer Nouveau Compte",
+        "newAccount": "S'inscrire",
+        "switchLogin": "Se connecter",
+        "visitYesNo": "Oui/Non",
+        "emailSpellError": "Cet email est invalide",
+        "yes": "Oui",
+        "no": "Non",
+        "emailError": "Veuillez saisir un email valide",
+        "dnError": "Display Name must be 5 letters length",
+        "dnReq": "Veuillez saisir votre nom d'utilisateur",
+        "emailReq": "Veuillez saisir votre email",
+        "passwordReq": "Veuillez saisir votre mot de passe",
+        "foreignReq": "Veuillez remplir ce champs"
+    },
+    "donate": {
+        "donateSub": "faire un don au fonds d'intervention COVID-19 ",
+        "donateDes": "L'Organisation mondiale de la santé (OMS) dirige et coordonne l'effort mondial, aidant les pays à prévenir, détecter et répondre à la pandémie. Chacun peut désormais soutenir directement la réponse coordonnée par l'OMS. Les personnes et les organisations qui souhaitent aider à lutter contre la pandémie et soutenir l'OMS et ses partenaires peuvent désormais faire un don par le biais du Fonds de réponse COVID-Solidarité pour l'OMS",
+        "donateButton": "Faire un don",
+        "help": "AIDER OMS",
+        "donateTitle": "AIDEZ À COMBATTRE CORONA"
+    },
+    "visit": {
+        "visitedCountryName": "Pays Visité",
+        "chosenDateVisit": "Date de visite",
+        "selectDate": "Choisir Date",
+        "placeStayVisit": "Adresse de séjour",
+        "visitDetails": "Détails de Visite",
+        "arrivalDetails": "Détails d'arrivée",
+        "arrivalCountryName": "Pays d'arrivée",
+        "chosenDateArrival": "Date d'arrivée",
+        "placeStayArrival": "Adresse de séjour",
+        "submit": "valider"
+    },
+    "symptom": {
+        "question": "Avez-vous ces symptômes au cours des 14 derniers jours",
+        "questionToday": "Avez-vous ces symptômes aujourd'hui",
+        "cold": "Rhume",
+        "cough": "Toux",
+        "fever": "Fièvre",
+        "mild": "Léger",
+        "severe": "Sévère",
+        "no": "Non",
+        "yesno": "Oui/Non",
+        "todaySymptom": "Avez-vous l'un de ces symptômes aujourd'hui",
+        "submit": "valider",
+        "titleSymptoms": "Détails des symptômes"
+    },
+    "dashboard": {
+        "selfUpdate": "Mise à jour",
+        "addSymptom": "Ajouter les symptômes",
+        "hello": "Salut !!",
+        "trackback": "TrackBack",
+        "donate": "Faire un don",
+        "selfQuarantine": "Quarantaine",
+        "news": "Actualité"
+    },
+    "personList": {
+        "testResult": "Résultat du test",
+        "metso": "Vous êtes en contact avec personne",
+        "cold": "Rhume",
+        "cough": "Toux",
+        "fever": "Fièvre"
+    },
+    "symptomList": {
+        "mild": "Léger",
+        "severe": "Sévère",
+        "no": "Non",
+        "day": "Jour",
+        "cold": "Rhume",
+        "cough": "Toux",
+        "fever": "Fièvre"
+    },
+    "personForm": {
+        "name": "Prénom",
+        "cold": "Rhume",
+        "cough": "Toux",
+        "fever": "Fièvre",
+        "editContact": "Modifier Contact",
+        "newContact": "Nouveau Contact",
+        "testResult": "Résultat du Test",
+        "add": "Ajouter Symptôme",
+        "submit": "valider",
+        "pickImage": "Choisir une Photo",
+        "positive": "Positif",
+        "negative": "Negatif",
+        "nameReq": "Veuillez saisir le prénom de votre contact",
+        "testResultReq": "Veuillez choisir le résultat du test"
+    },
+    "personDetail": {
+        "title": "Details du contact",
+        "testResult": "Résultat du test ",
+        "symptoms": "Symptômes",
+        "delete": "Supprimer?",
+        "deleteDes": "Ceci ne peut pas être défait",
+        "cancel": "Annuler"
+    },
+    "common": {
+        "currentLanguage": "sélectionnez une langue pour continuer ",
+        "actions": {
+            "toggleToEnglish": "Anglais",
+            "toggleToFrench": "Français",
+            "goToPage2": "Continuer"
+        },
+        "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
+    }
+}

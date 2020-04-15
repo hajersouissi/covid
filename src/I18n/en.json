@@ -1,0 +1,122 @@
+{
+  "home": {
+    "title": "Welcome Message",
+    "introduction": "This text comes from i18next and is provided in english."
+  },
+  "page2": {
+    "title": "Page 2",
+    "introduction": "This text on page two."
+  },
+  "auth": {
+    "emailError":"Please enter a valid email",
+    "dnError": "Display Name must be 5 letters length",
+    "dnReq": "Please enter your display name",
+    "emailReq": "Please enter your email",
+    "passwordReq": "Please enter your password",
+    "foreignReq": "This field is required to continue",
+    "email": "Email",
+    "displayName": "Display Name",
+    "foreignVisit": "Did you visit a foreign country last 30 days",
+    "password": "Password",
+    "login": "Login",
+    "signup": "Switch to signup",
+    "newAccount": "Create Account",
+    "switchLogin": "Switch to Login",
+    "visitYesNo": "Yes/No",
+    "emailSpellError": "Your email is invalid",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "visit": {
+    "visitedCountryName": "Visted Country Name",
+    "chosenDateVisit": "Date of visit",
+    "selectDate": "Select Date",
+    "placeStayVisit": "Place of stay address",
+    "visitDetails": "Visit Details",
+    "arrivalDetails": "Arrival Details",
+    "arrivalCountryName": "Arrival Country Name",
+    "chosenDateArrival": "Date of Arrival",
+    "placeStayArrival": "Place of stay address",
+    "submit": "submit"
+  },
+  "symptom": {
+    "question": "Did you face these symptoms in last 14 days",
+      "questionToday": "Did you face these symptoms today",
+    "cold": "Cold",
+    "cough": "Cough",
+    "fever": "Fever",
+    "mild": "Mild",
+    "severe": "Severe",
+    "no": "No",
+    "yesno": "Yes/No",
+    "todaySymptom": "Do you have any symptom today",
+    "submit": "submit",
+    "titleSymptoms": "Symptom Details"
+  },
+  "dashboard": {
+    "selfUpdate": "Self Update",
+    "addSymptom": "Add Today's Symptoms",
+    "hello": "Hello !!",
+    "trackback": "TrackBack",
+    "donate": "Donate",
+    "selfQuarantine": "Self Quarantine",
+    "news": "News"
+  },
+  "personList": {
+    "testResult": "Test Result",
+    "metso": "You haven't met anyone yet"
+  },
+  "symptomList": {
+    "day": "Day",
+    "cold": "Cold",
+    "cough": "Cough",
+    "fever": "Fever"
+  },
+  "personForm": {
+    "cold": "Cold",
+    "cough": "Cough",
+    "fever": "Fever",
+    "name": "Name",
+    "nameReq":"Please enter the name of the contact", 
+    "testResultReq": "Please enter the test result",
+    "editContact":"Edit Contact",
+    "newContact":"New Contact",
+    "TestResult": "Test Result",
+    "add": "Add symptom",
+    "submit": "submit",
+    "pickImage": "Upload Photo",
+    "positive":"Positive",
+    "negative":"Negative"
+  },
+  "personDetail": {
+    "title":"Contact Details",
+    "testResult": "Test Result ",
+    "symptoms": "Symptoms",
+    "delete": "Delete?",
+    "deleteDes": "Cannot be undone",
+    "cancel": "Cancel"
+  },
+  "donate": {
+    "donateSub": "Donate to the COVID-19 Response Fund ",
+    "donateDes": "The World Health Organization (WHO) is leading and coordinating the global effort, supporting countries to prevent, detect, and respond to the pandemic.Everyone can now support directly the response coordinated by WHO. People and organizations who want to help fight the pandemic and support WHO and partners can now donate through the COVID-Solidarity Response Fund for WHO.",
+    "donateButton": "Donate",
+    "help": "HELP WHO",
+    "donateTitle": "Help fight Coronavirus"
+  },
+  "news": {
+    "title": "Coronavirus Latest News",
+    "time": " ",
+    "timeHeure":" hours ago",
+    "full": "FULL ARTICLE",
+    "indicator":"Please Wait.."
+  },
+  "common": {
+    "currentLanguage": "Choose language to continue ",
+    "actions": {
+      "toggleToFrench": "French",
+      "toggleToEnglish": "English",
+      "goToPage2": "Next"
+    },
+    "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
+  }
+}
