@@ -54,10 +54,10 @@ class Dashboard extends Component {
 
   render () {
     const {navigation, settings} = this.props;
-    const LightIcon = settings['light'].icon;
-    const ACIcon = settings['ac'].icon;
-    const TempIcon = settings['temperature'].icon;
-    const FanIcon = settings['fan'].icon;
+    const TrackBackIcon = settings['trackBack'].icon;
+    const DonateIcon = settings['donate'].icon;
+    const SelfQuarantineIcon = settings['selfQuarantine'].icon;
+    const NewsIcon = settings['news'].icon;
 
     return (
       <View style={styles.container}>
@@ -136,15 +136,15 @@ class Dashboard extends Component {
                     <TouchableOpacity
                       activeOpacity={0.8}
                       onPress={() =>
-                        navigation.navigate ('PersonList', {name: 'light'})}
+                        navigation.navigate ('PersonList', {name: 'trackBack'})}
                     >
                       <Block center middle style={styles.button}>
-                        <LightIcon size={38} />
+                        <TrackBackIcon size={38} />
                         <Text
                           button
                           style={{marginTop: theme.sizes.base * 0.5}}
                         >
-                          {settings['light'].name}
+                          {settings['trackBack'].name}
                         </Text>
                       </Block>
                     </TouchableOpacity>
@@ -152,15 +152,15 @@ class Dashboard extends Component {
                     <TouchableOpacity
                       activeOpacity={0.8}
                       onPress={() =>
-                        navigation.navigate ('DonateScreen', {name: 'ac'})}
+                        navigation.navigate ('DonateScreen', {name: 'donate'})}
                     >
                       <Block center middle style={styles.button}>
-                        <ACIcon size={38} />
+                        <DonateIcon size={38} />
                         <Text
                           button
                           style={{marginTop: theme.sizes.base * 0.5}}
                         >
-                          {settings['ac'].name}
+                          {settings['donate'].name}
                         </Text>
                       </Block>
                     </TouchableOpacity>
@@ -175,16 +175,16 @@ class Dashboard extends Component {
                       activeOpacity={0.8}
                       onPress={() =>
                         navigation.navigate ('SymptomList', {
-                          name: 'temperature',
+                          name: 'selfQuarantine',
                         })}
                     >
                       <Block center middle style={styles.button}>
-                        <TempIcon size={38} />
+                        <SelfQuarantineIcon size={38} />
                         <Text
                           button
                           style={{marginTop: theme.sizes.base * 0.5}}
                         >
-                          {settings['temperature'].name}
+                          {settings['selfQuarantine'].name}
                         </Text>
                       </Block>
                     </TouchableOpacity>
@@ -192,15 +192,15 @@ class Dashboard extends Component {
                     <TouchableOpacity
                       activeOpacity={0.8}
                       onPress={() =>
-                        navigation.navigate ('NewsScreen', {name: 'fan'})}
+                        navigation.navigate ('NewsScreen', {name: 'news'})}
                     >
                       <Block center middle style={styles.button}>
-                        <FanIcon size={38} />
+                        <NewsIcon size={38} />
                         <Text
                           button
                           style={{marginTop: theme.sizes.base * 0.5}}
                         >
-                          {settings['fan'].name}
+                          {settings['news'].name}
                         </Text>
                       </Block>
                     </TouchableOpacity>

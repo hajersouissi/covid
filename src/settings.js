@@ -11,7 +11,7 @@ import {withTranslation} from 'react-i18next';
 import * as theme from './theme';
 
 export default {
-  light: {
+  trackBack: {
     name: i18n.t ('dashboard:trackback'),
 
     icon: ({size, color, ...props}) => (
@@ -23,7 +23,7 @@ export default {
       />
     ),
   },
-  ac: {
+  donate: {
     name: i18n.t ('dashboard:donate'),
 
     icon: ({size, color, ...props}) => (
@@ -35,7 +35,7 @@ export default {
       />
     ),
   },
-  temperature: {
+  selfQuarantine: {
     name: i18n.t ('dashboard:selfQuarantine'),
 
     icon: ({size, color, ...props}) => (
@@ -47,7 +47,7 @@ export default {
       />
     ),
   },
-  fan: {
+  news: {
     name: i18n.t ('dashboard:news'),
 
     icon: ({size, color, ...props}) => (
