@@ -1,6 +1,6 @@
 # covid
 
-
+- Make sure you connect React Native App with your cloud Firestore database.
 
 Installing (Using a terminal)
 
@@ -13,7 +13,6 @@ Android: Make sure your Android Home path is setup correctly and run the app in 
 *export PATH=$PATH:$ANDROID_HOME/tools
 *export PATH=$PATH:$ANDROID_HOME/tools/bin
 *export PATH=$PATH:$ANDROID_HOME/platform-tools)
-- Make sure you connect React Native App with your cloud Firestore database.
 
 You will probably get errors switching between branches. Make sure you run these commands before running the code:
 
