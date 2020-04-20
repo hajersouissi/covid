@@ -1,9 +1,11 @@
-# covid
+# COVID-19 HELP APP
+
+
+
+Installing 
 
 - Make sure you connect React Native App with your cloud Firestore database.
-
-Installing (Using a terminal)
-
+(Using a terminal)
 - Copy the repo to your local machine with 'git clone https://github.com/hajersouissi/covid.git'
 cd into the top level folder
 - Make sure you have the Metro bundler running with 'react-native start'
