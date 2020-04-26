@@ -12,11 +12,8 @@ import {
   Image,
 } from 'react-native';
 import Toast, {DURATION} from 'react-native-easy-toast';
-
 import i18n from 'i18next';
-
 import {withTranslation} from 'react-i18next';
-
 import * as theme from '../theme';
 import {Block, Text} from '../components';
 import mocks from '../settings';
