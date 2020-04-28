@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import i18n from './index';
+
 export default class StyleSheetFactory {
   static getSheet (isRTL) {
     isRTL ? i18n.setLanguage ('ar') : i18n.setLanguage ('en');
