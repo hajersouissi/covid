@@ -177,12 +177,6 @@ const picker= {
 
 
 const pickerStyle = {
-  inputIOS: {
-    color: 'red',
-    paddingTop: 13,
-    paddingHorizontal: 10,
-    paddingBottom: 12,
-  },
   inputAndroid: {
     width: '130%',
     height: 50,
