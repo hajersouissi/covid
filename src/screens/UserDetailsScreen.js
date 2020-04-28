@@ -1,16 +1,5 @@
 import React, {Component} from 'react';
 import SymptomForm from '../ui/SymptomForm';
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  TextInput,
-  Text,
-  Button,
-} from 'react-native';
-
-import {ListItem, Divider} from 'react-native-elements';
-import {addSymptom} from '../api/PersonsApi';
 
 export default class SymptomFormScreen extends Component {
   static navigationOptions = ({navigation}) => {

@@ -1,15 +1,6 @@
 import React, {Component} from 'react';
 import VisitForm from '../ui/VisitForm';
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  TextInput,
-  Text,
-  Button,
-} from 'react-native';
-import moment from 'moment';
-import {CountriesScreen} from '../components';
+
 export default class VisitFormScreen extends Component {
   static navigationOptions = ({navigation}) => {
     return {
@@ -33,10 +24,10 @@ export default class VisitFormScreen extends Component {
   };
 
   handlePicker = date => {
-let moment = require ('moment');
-if ('default' in moment) {
-  moment = moment['default'];
-}
+    let moment = require ('moment');
+    if ('default' in moment) {
+      moment = moment['default'];
+    }
 
     this.setState ({
       isVisible: false,
@@ -51,13 +42,11 @@ if ('default' in moment) {
   };
 
   handlePickerArrival = date => {
-    
-              let moment = require ('moment');
-              if ('default' in moment) {
-                moment = moment['default'];
-              }
+    let moment = require ('moment');
+    if ('default' in moment) {
+      moment = moment['default'];
+    }
 
-           
     this.setState ({
       isVisibleArrival: false,
 
@@ -70,7 +59,6 @@ if ('default' in moment) {
   showPickerArrival = () => {
     this.setState ({isVisibleArrival: true});
   };
- 
 
   componentDidMount () {
     const currentVisit = this.props.navigation.getParam ('visit');
@@ -89,19 +77,16 @@ if ('default' in moment) {
   render () {
     return (
       <VisitForm
-
         visit={this.state.visit}
         onVisitAdded={this.onVisitAdded}
         isVisible={this.state.isVisible}
         isVisibleArrival={this.state.isVisibleArrival}
         chosenDateVisit={this.state.chosenDateVisit}
         chosenDateArrival={this.state.chosenDateArrival}
-      
         getAttack={this.getAttack}
         hidePicker={this.hidePicker}
         handlePicker={this.handlePicker}
         showPicker={this.showPicker}
-     
         hidePickerArrival={this.hidePickerArrival}
         handlePickerArrival={this.handlePickerArrival}
         showPickerArrival={this.showPickerArrival}

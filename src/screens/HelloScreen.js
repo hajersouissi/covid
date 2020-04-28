@@ -1,7 +1,15 @@
 import React from 'react';
 
 import i18n from 'i18next';
-import {StyleSheet, Text, View, Button,Image, AsyncStorage,StatusBar} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  Image,
+  AsyncStorage,
+  StatusBar,
+} from 'react-native';
 import {withTranslation} from 'react-i18next';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -35,8 +43,11 @@ export class HelloScreen extends React.Component {
 
     return (
       <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="blue" />
-      <Image source={require ('../assets/covidapp.png')} style={styles.image} />
+        <StatusBar barStyle="light-content" backgroundColor="blue" />
+        <Image
+          source={require ('../assets/covidapp.png')}
+          style={styles.image}
+        />
 
         <Text
           style={{
@@ -109,9 +120,9 @@ const styles = StyleSheet.create ({
     width: '50%',
     height: '30%',
     borderWidth: 5,
-alignSelf:'center',
+    alignSelf: 'center',
     borderColor: 'white',
-    borderRadius: 3
+    borderRadius: 3,
   },
 
   button: {

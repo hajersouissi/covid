@@ -6,7 +6,7 @@ export async function getArticles (category = 'health') {
   if (i18n.language == 'fr') {
     lang = 'fr';
   }
-  
+
   try {
     let articles = await fetch (
       `${articles_url}?country=${lang}&category=${category}`,

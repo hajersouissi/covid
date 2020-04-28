@@ -2,19 +2,16 @@ import React, {Component} from 'react';
 import {
   View,
   Text,
-  FlatList,
-    ImageBackground,
   StyleSheet,
   StatusBar,
   Alert,
-  Image,
 } from 'react-native';
-import {Divider, Icon} from 'react-native-elements';
+import { Icon} from 'react-native-elements';
 import {deleteSymptom} from '../api/PersonsApi';
 import i18n from 'i18next';
 import {Card} from 'react-native-shadow-cards';
 
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {withTranslation} from 'react-i18next';
 
 class SymptomDetailScreen extends Component {
   static navigationOptions = () => {

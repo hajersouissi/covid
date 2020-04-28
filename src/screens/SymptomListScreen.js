@@ -15,7 +15,7 @@ import ActionButton from 'react-native-action-button';
 import * as moment from 'moment';
 import i18n from 'i18next';
 
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {withTranslation} from 'react-i18next';
 
 class SymptomList extends Component {
   static navigationOptions = ({navigation}) => {
@@ -61,7 +61,7 @@ class SymptomList extends Component {
     this.props.navigation.addListener ('willFocus', this._handleStateChange);
   }
   _handleStateChange = state => {
-    this.setState({loading:true});
+    this.setState ({loading: true});
     setTimeout (() => this.setState ({loading: false}), 1000);
 
     getSymptoms (this.onSymptomsReceived);
@@ -79,7 +79,6 @@ class SymptomList extends Component {
 
   render () {
     console.log ('hii', this.state.symptomList);
-
 
     return this.state.symptomList.length > 0
       ? <SafeAreaView style={styles.container}>

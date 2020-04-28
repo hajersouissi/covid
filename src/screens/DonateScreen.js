@@ -19,9 +19,7 @@ import ModalDonate from '../components/ModalDonate';
 class DonateScreen extends Component {
   static navigationOptions = ({navigation}) => {
     return {
-      title: 
-  i18n.t ('donate:donateTitle'),
-
+      title: i18n.t ('donate:donateTitle'),
     };
   };
 
@@ -120,8 +118,7 @@ export default withTranslation () (DonateScreen);
 var styles = StyleSheet.create ({
   container: {
     flex: 1,
-    backgroundColor:'#F5FCFF',
-
+    backgroundColor: '#F5FCFF',
   },
   footer: {
     flex: 1,
@@ -131,7 +128,6 @@ var styles = StyleSheet.create ({
     width: height_image,
     height: height_image,
     marginBottom: height_image,
-    
   },
   image: {
     width: '100%',
