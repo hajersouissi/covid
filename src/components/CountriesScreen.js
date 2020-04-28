@@ -12,7 +12,6 @@ class CountriesScreen extends Component {
 
   handleCountChange = () => {
     var lang = this.dropdown.selectedValue;
-    console.log ('langee', lang);
     this.props.onSelectCountry (lang);
   };
 

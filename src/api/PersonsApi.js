@@ -191,19 +191,6 @@ export function addVisit (visit, addComplete) {
     .then (() => addComplete (visit))
     .catch (error => console.log (error));
 }
-/*export function addVisitCount (visitedCountryName) {
- 
-var userid = firebase.auth ().currentUser.uid;
-  console.log ('current user', firebase.auth ().currentUser);
-
-  firebase
-    .firestore ()
-    .collection ('Visits')
-    .doc(userid)
-    .add( {visitedCountryName:visitedCountryName })
-    .then (() => addComplete (visitedCountryName))
-    .catch (error => console.log (error));
-}*/
 
 export function addSymptom (symptom, addComplete) {
   symptom.createdAt = firebase.firestore.FieldValue.serverTimestamp ();
@@ -231,7 +218,6 @@ export async function getDashboardInfo (nameRetrieved, symptomRetrieved) {
     .collection ('users')
     .doc (userid)
     .get ()).data ().displayName;
-  console.log ('hell', name);
   nameRetrieved (name);
 
   firebase

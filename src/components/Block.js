@@ -4,7 +4,6 @@ import {StyleSheet, View} from 'react-native';
 export default class Block extends Component {
   render () {
     const {
-     
       row,
       column,
       center,
@@ -17,7 +16,7 @@ export default class Block extends Component {
     } = this.props;
     const blockStyles = [
       styles.block,
-      
+
       center && styles.center,
       middle && styles.middle,
       right && styles.right,
@@ -36,9 +35,7 @@ export default class Block extends Component {
 }
 
 const styles = StyleSheet.create ({
-  block: {
-    // flex: 1,
-  },
+  block: {},
   row: {
     flexDirection: 'row',
   },
