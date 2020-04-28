@@ -10,11 +10,10 @@ import {withTranslation} from 'react-i18next';
 
 import {getArticles} from '../service/news';
 
- class NewsScreen extends Component {
+class NewsScreen extends Component {
   static navigationOptions = ({navigation}) => {
     return {
       title: i18n.t ('news:title'),
-  
     };
   };
   constructor (props) {

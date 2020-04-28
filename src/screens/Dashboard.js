@@ -11,7 +11,7 @@ import {
   TouchableWithoutFeedback,
   Image,
 } from 'react-native';
-import Toast, {DURATION} from 'react-native-easy-toast';
+import Toast from 'react-native-easy-toast';
 import i18n from 'i18next';
 import {withTranslation} from 'react-i18next';
 import * as theme from '../theme';
@@ -19,11 +19,8 @@ import {Block, Text} from '../components';
 import mocks from '../settings';
 import ActionButton from 'react-native-action-button';
 
-import {
-  getDashboardInfo,
-  signout,
-} from '../api/PersonsApi';
-import {FlatList} from 'react-native-gesture-handler';
+import {getDashboardInfo, signout} from '../api/PersonsApi';
+
 class Dashboard extends Component {
   state = {
     loading: true,
@@ -70,9 +67,8 @@ class Dashboard extends Component {
                     {this.state.name}
                   </Text>
                 </Block>
-                <Block column style={{marginLeft:170}}>
+                <Block column style={{marginLeft: 170}}>
                   <Button
-                
                     color="blue"
                     title="log out"
                     onPress={() => signout (navigation.navigate ('Auth'))}
@@ -103,9 +99,9 @@ class Dashboard extends Component {
                     style={{marginLeft: 10, marginRight: 15}}
                     buttonColor="blue"
                     onPress={() => {
-                  //    if (this.state.test == true) {
-                        this.props.navigation.navigate ('SymptomFormHomeScreen');
-                     /* } else {
+                      //    if (this.state.test == true) {
+                      this.props.navigation.navigate ('SymptomFormHomeScreen');
+                      /* } else {
                         this.refs.toast.show (
                           'you have already entered your symptoms',
                           DURATION.LENGTH_LONG
@@ -212,9 +208,7 @@ class Dashboard extends Component {
                   textStyle={{color: 'black'}}
                 />
               </ScrollView>
-            </Block>
-            
-       }
+            </Block>}
       </View>
     );
   }

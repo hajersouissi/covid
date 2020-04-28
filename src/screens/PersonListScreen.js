@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {
   StyleSheet,
-  Button,
   FlatList,
   SafeAreaView,
   Text,
@@ -11,9 +10,9 @@ import {
 } from 'react-native';
 import i18n from 'i18next';
 
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {withTranslation} from 'react-i18next';
 
-import {getPersons, signout} from '../api/PersonsApi';
+import {getPersons} from '../api/PersonsApi';
 import {ListItem, Divider} from 'react-native-elements';
 import ActionButton from 'react-native-action-button';
 
@@ -38,7 +37,7 @@ class PersonList extends Component {
     this.setState (prevState => ({
       personList: [...prevState.personList, person],
     }));
-    this.props.navigation.navigate('PersonList');
+    this.props.navigation.navigate ('PersonList');
   };
 
   onPersonDeleted = () => {
@@ -49,7 +48,7 @@ class PersonList extends Component {
       personList: (prevState.personList = newPersonList),
     }));
 
-    this.props.navigation.navigate('PersonList');
+    this.props.navigation.navigate ('PersonList');
   };
 
   onPersonsReceived = personList => {
@@ -67,7 +66,7 @@ class PersonList extends Component {
   }
   _handleStateChange = state => {
     this.setState ({loading: true});
-setTimeout (() => this.setState ({loading: false}), 1000);
+    setTimeout (() => this.setState ({loading: false}), 1000);
 
     getPersons (this.onPersonsReceived);
   };
@@ -133,19 +132,19 @@ setTimeout (() => this.setState ({loading: false}), 1000);
                 {i18n.t ('personList:metso')}
               </Text>}
           {this.showActionButton ()}
-        </View>
+        </View>;
   }
 }
 
 const styles = StyleSheet.create ({
   container: {
     flex: 1,
-    backgroundColor:'#F5FCFF',
+    backgroundColor: '#F5FCFF',
   },
   listItem: {
     marginTop: 8,
     marginBottom: 8,
-    backgroundColor:'#F5FCFF',
+    backgroundColor: '#F5FCFF',
   },
   textContainer: {
     flex: 1,

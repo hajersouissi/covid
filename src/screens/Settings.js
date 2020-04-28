@@ -2,12 +2,9 @@ import React, {Component} from 'react';
 import {
   StyleSheet,
   TouchableWithoutFeedback,
-  Button,
   Slider,
-  TouchableHighlight,
 } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
 import * as theme from '../theme';
 import {Block, Text, PanSlider} from '../components';
 import mocks from '../settings';
@@ -67,10 +64,7 @@ class Settings extends Component {
 
           </Block>
           <Block style={{marginLeft: 30}} center>
-            <PanSlider
-             
-            
-             />
+            <PanSlider />
             <Text caption> Fever  (°C) </Text>
 
           </Block>
@@ -110,7 +104,6 @@ class Settings extends Component {
             />
           </Block>
         </Block>
-       
 
       </Block>
     );
