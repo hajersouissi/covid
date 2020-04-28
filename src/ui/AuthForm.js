@@ -6,7 +6,7 @@ import * as yup from 'yup';
 import i18n from 'i18next';
 import PickerSelect from 'react-native-picker-select';
 
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {withTranslation} from 'react-i18next';
 
 const AuthForm = props => {
   displayNameInput = (
@@ -27,14 +27,13 @@ const AuthForm = props => {
         {i18n.t ('auth:foreignVisit')}
       </Text>
       <PickerSelect
-  onValueChange={value => props.setFieldValue ('foreignVisit', value)}
-  items={[
-    {label: i18n.t ('auth:yes'), value: 'yes'},
-    {label: i18n.t ('auth:no'), value: 'no'},
-    
-  ]}
-  style={pickerStyle}
-/>
+        onValueChange={value => props.setFieldValue ('foreignVisit', value)}
+        items={[
+          {label: i18n.t ('auth:yes'), value: 'yes'},
+          {label: i18n.t ('auth:no'), value: 'no'},
+        ]}
+        style={pickerStyle}
+      />
 
       <Text style={styles.validationText}>{props.errors.foreignVisit}</Text>
 
@@ -136,7 +135,6 @@ const pickerStyle = {
   },
 };
 
-
 const FormikCalculator = withFormik ({
   mapPropsToValues: user => ({
     email: user.email,
@@ -146,13 +144,16 @@ const FormikCalculator = withFormik ({
   }),
   validationSchema: props =>
     yup.object ().shape ({
-      email: yup.string ().email (i18n.t('auth:emailError')).required (i18n.t('auth:emailReq')),
-      password: yup.string ().required (i18n.t('auth:passwordReq')),
+      email: yup
+        .string ()
+        .email (i18n.t ('auth:emailError'))
+        .required (i18n.t ('auth:emailReq')),
+      password: yup.string ().required (i18n.t ('auth:passwordReq')),
       foreignVisit: props.authMode === 'signup'
-        ? yup.string ().required (i18n.t('auth:foreignReq'))
+        ? yup.string ().required (i18n.t ('auth:foreignReq'))
         : null,
       displayName: props.authMode === 'signup'
-        ? yup.string ().required (i18n.t('auth:dnReq'))
+        ? yup.string ().required (i18n.t ('auth:dnReq'))
         : null,
     }),
   handleSubmit: (values, {props}) => {

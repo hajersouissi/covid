@@ -4,6 +4,7 @@ import * as theme from '../theme';
 
 export default class Typography extends Component {
   render () {
+    
     const {
       center,
       right,

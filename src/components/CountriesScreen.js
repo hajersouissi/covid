@@ -22,7 +22,6 @@ class CountriesScreen extends Component {
       countryNameListWithCode: countryNamesWithCodes,
     });
   }
-
   render () {
     console.log ('lang', this.state.countryCode);
 

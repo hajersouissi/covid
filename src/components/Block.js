@@ -16,7 +16,6 @@ export default class Block extends Component {
     } = this.props;
     const blockStyles = [
       styles.block,
-
       center && styles.center,
       middle && styles.middle,
       right && styles.right,

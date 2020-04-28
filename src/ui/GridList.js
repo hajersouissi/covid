@@ -7,7 +7,7 @@ import {
 
 const GridList = (props) => {
   return (
-    <>
+
       <FlatList
         contentContainerStyle={styles.grid}
         numColumns={3}
@@ -20,7 +20,7 @@ const GridList = (props) => {
         }
       />
     
-    </>
+
   )
 }
 

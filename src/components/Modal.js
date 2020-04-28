@@ -1,6 +1,6 @@
 //import libraries
 import React, {Component} from 'react';
-import {Dimensions,  Modal, Share, ScrollView} from 'react-native';
+import {Dimensions, Modal, Share, ScrollView} from 'react-native';
 import {WebView} from 'react-native-webview';
 
 import {
@@ -27,7 +27,7 @@ class ModalComponent extends Component {
     return this.props.onClose ();
   };
 
- /* handleShare = () => {
+  /* handleShare = () => {
     const {url, title} = this.props.articleData;
     message = '${title}\n\nRead More @${url}\n\nShared via RN News App';
     return Share.share (
@@ -39,7 +39,7 @@ class ModalComponent extends Component {
   render () {
     const {showModal, articleData} = this.props;
     const {url} = articleData;
-    if (url != undefined ) {
+    if (url != undefined) {
       return (
         <Modal
           animationType="slide"
@@ -65,10 +65,9 @@ class ModalComponent extends Component {
                 </Button>
               </Right>
             </Header>
-         
-            <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-       
-            
+
+            <ScrollView contentContainerStyle={{flexGrow: 1}}>
+
               <WebView
                 source={{uri: url}}
                 style={{flex: 1}}
@@ -77,9 +76,8 @@ class ModalComponent extends Component {
                 scalesPageToFit
                 scrollEnabled={true}
               />
-            
-           
-              </ScrollView>
+
+            </ScrollView>
           </Container>
         </Modal>
       );

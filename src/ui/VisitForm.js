@@ -5,10 +5,6 @@ import {
   TouchableHighlight,
   StatusBar,
   View,
-  SafeAreaView,
-  Picker,
-  TextInput,
-  Text,
   Button,
   TouchableOpacity,
   ActivityIndicator,
@@ -21,8 +17,6 @@ import {withTranslation, WithTranslation} from 'react-i18next';
 import * as yup from 'yup';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import {CountriesScreen} from '../components';
-
-import {addVisit} from '../api/PersonsApi';
 
 const VisitForm = props => {
   return (

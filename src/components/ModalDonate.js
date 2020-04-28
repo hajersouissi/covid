@@ -84,5 +84,4 @@ class ModalDonate extends Component {
   }
 }
 
-//make this component available to the app
 export default ModalDonate;

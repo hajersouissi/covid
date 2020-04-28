@@ -13,16 +13,12 @@ import {
 } from 'react-native';
 import * as theme from '../theme';
 import i18n from 'i18next';
-
 import {withTranslation, WithTranslation} from 'react-i18next';
-
 import PickerSelect from 'react-native-picker-select';
 import {Block, PanSlider} from '../components';
-
 import {withFormik} from 'formik';
 import * as yup from 'yup';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
-
 import {addSymptom, updateSymptom} from '../api/PersonsApi';
 
 const SymptomFormHome = props => {
@@ -101,7 +97,6 @@ const pickerStyle = {
     height: 50,
     color: 'black',
     alignSelf: 'center',
-
     backgroundColor: '#eee',
     borderWidth: 4,
     padding: 8,
@@ -121,7 +116,6 @@ const styles = StyleSheet.create ({
     borderColor: '#B5B4BC',
     borderWidth: 1,
     alignSelf: 'center',
-
     padding: 8,
   },
   validationText: {
@@ -132,7 +126,6 @@ const styles = StyleSheet.create ({
     height: 50,
     color: 'black',
     alignSelf: 'center',
-
     borderColor: '#B5B4BC',
     borderWidth: 1,
     padding: 8,
@@ -141,13 +134,11 @@ const styles = StyleSheet.create ({
   buttonStyle: {
     height: 40,
     alignSelf: 'center',
-
     borderRadius: 10,
     backgroundColor: '#eee',
     marginLeft: 50,
     marginRight: 50,
     marginBottom: 20,
-
     width: 200,
   },
 });
@@ -164,7 +155,6 @@ const Formikc = withFormik ({
 
   handleSubmit: (values, {props}) => {
     console.log (props);
-
     console.log (values);
 
     if (props.symptom.id) {

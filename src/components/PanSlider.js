@@ -15,8 +15,7 @@ class PanSlider extends Component {
     rangeValue: 0,
     percentage: 0,
   };
-
-
+  
   handleMove = moveValue => {
     const {panValue} = this.state;
     const {minValue, maxValue} = this.props;

@@ -1,17 +1,8 @@
 import React, {Component} from 'react';
-import {
-  ListItem,
-  Thumbnail,
-  Body,
-  View,
-  Text,
-  Button,
-} from 'native-base';
+import {ListItem, Thumbnail, Body, View, Text, Button} from 'native-base';
 import TimeAgo from './Time';
 import i18n from 'i18next';
-
 import {withTranslation} from 'react-i18next';
-
 
 class DataItem extends Component {
   constructor (props) {
@@ -27,11 +18,16 @@ class DataItem extends Component {
 
   render () {
     return (
-      <ListItem >
+      <ListItem>
 
         <Body>
           <Thumbnail
-            style={{width: 300, height: 180, borderRadius: 30 / 2,alignSelf:'center'}}
+            style={{
+              width: 300,
+              height: 180,
+              borderRadius: 30 / 2,
+              alignSelf: 'center',
+            }}
             square
             source={{
               uri: this.data.urlToImage != null
@@ -40,22 +36,37 @@ class DataItem extends Component {
             }}
           />
 
-          <Text numberOfLines={6} style={{textAlign: 'center'}}>{this.data.title}</Text>
-          <Text note numberOfLines={4} style={{marginEnd:25}}>{this.data.description}</Text>
+          <Text numberOfLines={6} style={{textAlign: 'center'}}>
+            {this.data.title}
+          </Text>
+          <Text note numberOfLines={4} style={{marginEnd: 25}}>
+            {this.data.description}
+          </Text>
           <View
-            style={{flex: 1, flexDirection: 'row', marginTop: 8, marginLeft: 12}}
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              marginTop: 8,
+              marginLeft: 12,
+            }}
           >
-            <Text note >{this.data.source.name}</Text>
+            <Text note>{this.data.source.name}</Text>
             <TimeAgo time={this.data.publishedAt} />
 
           </View>
           <View>
 
-            <Button 
-            
-            style={{width: 125, height: 40, alignSelf:'flex-end',marginEnd:10,marginTop:5}}
-            onPress={this.handlePress}>
-              <Text style={{textAlign: 'center'}}>{ i18n.t ('news:full')}</Text>
+            <Button
+              style={{
+                width: 125,
+                height: 40,
+                alignSelf: 'flex-end',
+                marginEnd: 10,
+                marginTop: 5,
+              }}
+              onPress={this.handlePress}
+            >
+              <Text style={{textAlign: 'center'}}>{i18n.t ('news:full')}</Text>
             </Button>
 
           </View>
@@ -67,4 +78,3 @@ class DataItem extends Component {
   }
 }
 export default withTranslation () (DataItem);
-

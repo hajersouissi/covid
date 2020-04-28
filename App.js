@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 
-import i18n from './src/I18n/index';
-
 import PersonListScreen from './src/screens/PersonListScreen';
 import SymptomListScreen from './src/screens/SymptomListScreen';
 import NewsScreen from './src/screens/NewsScreen';
 import DonateScreen from './src/screens/DonateScreen';
 import HelloScreen from './src/screens/HelloScreen';
-import PageScreen from './src/screens/PageScreen';
+
 import LoginScreen from './src/screens/LoginScreen';
 import PersonFormScreen from './src/screens/PersonFormScreen';
 import PersonDetailScreen from './src/screens/PersonDetailScreen';
@@ -94,11 +92,11 @@ export default class App extends Component {
   render () {
     return (
       <AppContainer>
-      
+
         <ReloadAppOnLanguageChange />
-         screenProps=
+        screenProps=
         {{appName: 'COVID-19 HELP APP'}}
-       
+
       </AppContainer>
     );
   }

@@ -11,18 +11,10 @@ import {
   Text,
   Button,
 } from 'react-native';
-import * as theme from '../theme';
 import i18n from 'i18next';
-
-import {withTranslation, WithTranslation} from 'react-i18next';
-
+import {withTranslation} from 'react-i18next';
 import PickerSelect from 'react-native-picker-select';
-import {Block, PanSlider} from '../components';
-
 import {withFormik} from 'formik';
-import * as yup from 'yup';
-import DateTimePickerModal from 'react-native-modal-datetime-picker';
-
 import {addSymptom} from '../api/PersonsApi';
 
 const SymptomForm = props => {
@@ -72,7 +64,6 @@ const SymptomForm = props => {
       <TextInput
         value={props.values.fever}
         style={styles.longFormInput}
-        //placeholder={i18n.t ('symptom:yesno')}
         onChangeText={text => {
           props.setFieldValue ('fever', text);
         }}
@@ -129,7 +120,6 @@ const pickerStyle = {
 const styles = StyleSheet.create ({
   container: {
     padding: 8,
-
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -140,7 +130,6 @@ const styles = StyleSheet.create ({
     borderColor: '#B5B4BC',
     borderWidth: 1,
     alignSelf: 'center',
-
     padding: 8,
   },
   validationText: {
@@ -151,7 +140,6 @@ const styles = StyleSheet.create ({
     height: 50,
     color: 'black',
     alignSelf: 'center',
-
     borderColor: '#B5B4BC',
     borderWidth: 1,
     padding: 8,
@@ -160,13 +148,11 @@ const styles = StyleSheet.create ({
   buttonStyle: {
     height: 40,
     alignSelf: 'center',
-
     borderRadius: 10,
     backgroundColor: '#D3D3D3',
     marginLeft: 50,
     marginRight: 50,
     marginBottom: 20,
-
     width: 200,
   },
 });
