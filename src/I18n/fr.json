@@ -11,10 +11,9 @@
         "title": "Actualité",
         "time": "il y a ",
         "timeHeure": " heures",
-        "full":"ARTICLE COMPLET",
+        "full": "ARTICLE COMPLET",
         "indicator": "Veuillez attender..."
     },
-
     "auth": {
         "email": "Email",
         "displayName": "Nom d'utilisateur",

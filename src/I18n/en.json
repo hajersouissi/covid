@@ -8,7 +8,7 @@
     "introduction": "This text on page two."
   },
   "auth": {
-    "emailError":"Please enter a valid email",
+    "emailError": "Please enter a valid email",
     "dnError": "Display Name must be 5 letters length",
     "dnReq": "Please enter your display name",
     "emailReq": "Please enter your email",
@@ -41,7 +41,7 @@
   },
   "symptom": {
     "question": "Did you face these symptoms in last 14 days",
-      "questionToday": "Did you face these symptoms today",
+    "questionToday": "Did you face these symptoms today",
     "cold": "Cold",
     "cough": "Cough",
     "fever": "Fever",
@@ -77,19 +77,19 @@
     "cough": "Cough",
     "fever": "Fever",
     "name": "Name",
-    "nameReq":"Please enter the name of the contact", 
+    "nameReq": "Please enter the name of the contact",
     "testResultReq": "Please enter the test result",
-    "editContact":"Edit Contact",
-    "newContact":"New Contact",
+    "editContact": "Edit Contact",
+    "newContact": "New Contact",
     "TestResult": "Test Result",
     "add": "Add symptom",
     "submit": "submit",
     "pickImage": "Upload Photo",
-    "positive":"Positive",
-    "negative":"Negative"
+    "positive": "Positive",
+    "negative": "Negative"
   },
   "personDetail": {
-    "title":"Contact Details",
+    "title": "Contact Details",
     "testResult": "Test Result ",
     "symptoms": "Symptoms",
     "delete": "Delete?",
@@ -106,9 +106,9 @@
   "news": {
     "title": "Coronavirus Latest News",
     "time": " ",
-    "timeHeure":" hours ago",
+    "timeHeure": " hours ago",
     "full": "FULL ARTICLE",
-    "indicator":"Please Wait.."
+    "indicator": "Please Wait.."
   },
   "common": {
     "currentLanguage": "Choose language to continue ",
