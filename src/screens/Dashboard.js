@@ -20,8 +20,6 @@ import mocks from '../settings';
 import ActionButton from 'react-native-action-button';
 
 import {
-  addSymptom,
-  getPersons,
   getDashboardInfo,
   signout,
 } from '../api/PersonsApi';
