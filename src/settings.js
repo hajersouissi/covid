@@ -1,8 +1,6 @@
 import React from 'react';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import MaterialCommunityIcons
-  from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
 import i18n from 'i18next';

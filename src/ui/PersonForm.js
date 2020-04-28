@@ -182,7 +182,6 @@ const pickerStyle = {
     height: 50,
     color: 'black',
     alignSelf: 'center',
-
     backgroundColor: '#eee',
     borderWidth: 4,
     padding: 8,

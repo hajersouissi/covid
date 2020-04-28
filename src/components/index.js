@@ -4,5 +4,4 @@ import PanSlider from './PanSlider';
 import CountriesScreen from './CountriesScreen';
 
 
-export {Block, Text, PanSlider,CountriesScreen
-};
+export {Block, Text, PanSlider,CountriesScreen};
