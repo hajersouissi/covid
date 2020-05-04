@@ -41,7 +41,7 @@ const AuthForm = props => {
   );
   return (
     <View style={styles.container}>
-      <Text h2 style={styles.header}>COVID-19 HELP APP</Text>
+      <Text h2 style={styles.header}>CovHelper</Text>
       {props.authMode === 'signup' ? displayNameInput : null}
       {props.authMode === 'signup' ? signupInput : null}
       <TextInput
