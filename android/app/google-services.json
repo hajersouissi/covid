@@ -6,11 +6,12 @@
     "storage_bucket": "codingwithcurry-f111c.appspot.com"
   },
   "client": [
+    
     {
       "client_info": {
-        "mobilesdk_app_id": "1:168366726114:android:a341a01933c688f8a577bb",
+        "mobilesdk_app_id": "1:168366726114:android:b446ba638d1415fea577bb",
         "android_client_info": {
-          "package_name": "com.cwc_react_native"
+          "package_name": "com.lordroid"
         }
       },
       "oauth_client": [
@@ -30,6 +31,13 @@
             {
               "client_id": "168366726114-9hs51tr7b6e6bh78k7dt3euad03l8458.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "168366726114-qpbdc42ekn9q8sq3naema2nc56ldt4vb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.CwC-React-Native"
+              }
             }
           ]
         }

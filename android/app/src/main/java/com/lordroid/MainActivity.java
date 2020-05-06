@@ -1,4 +1,4 @@
-package com.cwc_react_native;
+package com.lordroid;
 
 import com.facebook.react.ReactActivity;
 

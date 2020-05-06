@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.cwc_react_native",
+    package = "com.lordroid",
 )
 
 android_resource(
     name = "res",
-    package = "com.cwc_react_native",
+    package = "com.lordroid",
     res = "src/main/res",
 )
 

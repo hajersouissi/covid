@@ -5,6 +5,10 @@ import {
   TouchableHighlight,
   StatusBar,
   View,
+  SafeAreaView,
+  Picker,
+  TextInput,
+  Text,
   Button,
   TouchableOpacity,
   ActivityIndicator,
@@ -13,6 +17,7 @@ import {withFormik} from 'formik';
 import i18n from 'i18next';
 
 import {withTranslation, WithTranslation} from 'react-i18next';
+import {addVisit} from '../api/PersonsApi';
 
 import * as yup from 'yup';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
