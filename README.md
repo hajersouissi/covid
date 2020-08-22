@@ -1,5 +1,8 @@
-# COVID-19 HELP APP
+# CovHelper
 
+CovHelper is a mobile application (implemented on both Android & iOs) with **2 versions** one for **citizens** and the other for **medical establishments**.
+
+The application will help the government to **improve citizen’s behaviour, keep the user updated and safe by tracking of the user status ( by adding daily symptoms: his symptoms will be available only for hospitals so we can contact to have a test if needed ) and his contacts (who is infected and who was in contact with the victim) and last but not least allows the user to consult a list of nearest hospitals and donate to organisations and funds raised to defend COVID-19 outbreak**.
 
 - Make sure you connect React Native App with your cloud Firestore database.
 
